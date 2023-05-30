@@ -16,6 +16,9 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    /*The option down was added for JSON file can be read and imported in Typescript*/
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
   }
 }
