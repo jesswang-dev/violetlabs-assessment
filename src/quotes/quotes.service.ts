@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { Quote } from './quote.model';
-import quotesData from 'src/data/office_quotes.json';
+import quotesData from '../data/office_quotes.json';
 
 @Injectable()
 export class QuotesService {
