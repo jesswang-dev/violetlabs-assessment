@@ -63,7 +63,7 @@ $ npm run test:quotes
 
 ## Submission Notes
 
-The submission includes [quotes] folder under the src, which includes controllers listening to /quotes path. Currenlty, the app can handle GET request to retrieve one random quote from dataset, and POST requests to add a quote providing a quote and its charcater, added to e2e tests also. 
+The submission includes [quotes] folder under the src, which includes controllers listening to ```/quotes``` path. Currenlty, the app can handle GET request to retrieve one random quote from dataset, and POST requests to add a quote providing a quote and its charcater, added to e2e tests also. 
 
-[quotes] folder includes its own [test] folder, where includes unit tests for controllers, run the test by executing. ```bash $ npm run test:quotes``` 
+[quotes] folder includes its own [test] folder, where includes unit tests for controllers, run the test by executing. ``` $ npm run test:quotes``` 
 
