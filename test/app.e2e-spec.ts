@@ -22,7 +22,13 @@ describe('AppController (e2e)', () => {
       .expect('Hello World!');
   });
 
-  it('/quotes', () => {
+  it('/quotes (GET)', () => {
     return request(app.getHttpServer()).get('/quotes').expect(200);
+  });
+  it('/quotes (POST)', async () => {
+    request(app.getHttpServer())
+      .post('/quotes')
+      .send({ ' quote ': 'Hello World Again!', ' character ': 'Jessica' })
+      .expect(200);
   });
 });

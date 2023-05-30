@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { QuotesService } from './quotes.service';
+import { Quote } from './quote.model';
 
 @Controller('quotes')
 export class QuotesController {
@@ -14,6 +15,7 @@ export class QuotesController {
   }
   @Get()
   getRandomQuote(): any {
-    this.quotesService.getRandomQuote();
+    const randomQuote: Quote = this.quotesService.getRandomQuote();
+    return randomQuote;
   }
 }
